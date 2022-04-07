@@ -1,2 +1,2 @@
 # 6Semester
-Repo for the six
+Repo fuer 6tes Semester
