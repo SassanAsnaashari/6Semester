@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ITT SYSTEM "vl1.dtd">
+
+<ITT>
+    <Name>
+        <Vorname>Hans</Vorname>
+        <Nachname>Peter</Nachname>
+    </Name>
+    <Datum> 05.04.2022 </Datum>
+    <img src="Test"/>
+    <Beschreibung>
+        beliebige Zeichen
+        <Name>
+            <Vorname> &VL; Vorname</Vorname>
+            <Nachname>Nachname</Nachname>
+        </Name>
+        Weiterer Text
+    </Beschreibung>
+</ITT>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT ITT (Name*, Datum? ,img*,Beschreibung)>
+    <!ELEMENT Name (Vorname, Nachname+)*>
+    <!ELEMENT Vorname (#PCDATA)>
+    <!ELEMENT Nachname (#PCDATA)>
+    <!ELEMENT Datum (#PCDATA)>
+    <!ELEMENT img EMPTY >
+    <!ATTLIST img src CDATA #REQUIRED>
+    <!ELEMENT hoehe (#PCDATA) >
+    <!ELEMENT Beschreibung (#PCDATA|Name|Vorname)*>
+    <!ENTITY VL "Vorlesung Internettechnologie">
+    <!ENTITY  %String "(#PCDATA)">

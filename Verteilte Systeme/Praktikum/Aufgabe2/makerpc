@@ -1,0 +1,28 @@
+# Skript für Terminal (Shell) - Fenster
+# Sie können auch Entwicklungsumgebungen benutzen.
+# rcpgen in Entwicklungsumgebungen vielleicht nicht verfuegbar.
+
+
+rpcgen rdbase.x
+
+cc -c rdbase_clnt.c
+cc -c rdbase_cif.c
+cc -c rdbase.c
+
+cc -c rdbase_xdr.c
+
+cc -o rdbase rdbase_clnt.o rdbase_cif.o rdbase.o rdbase_xdr.o
+
+cc -c rdbase_svc.c
+cc -c rdbase_sif.c
+cc -c rdbase_srp.c
+
+cc -o rdbased rdbase_svc.o rdbase_sif.o rdbase_srp.o rdbase_xdr.o
+
+
+
+# Die folgenden Befehle lassen Server (Daemon) und Client laufen.
+
+#rdbased  (im Hintergrund mit & oder in einer eigenen Shell)
+
+#rdbase (in einer eigenen Shell)

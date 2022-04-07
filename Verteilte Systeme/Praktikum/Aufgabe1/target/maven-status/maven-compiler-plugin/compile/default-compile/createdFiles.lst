@@ -1,0 +1,10 @@
+Common\Konto.class
+Client\KundeClient.class
+Common\KundeException.class
+Server\BankServer.class
+Server\Kunde\KundeImpl.class
+Client\FinanzamtClient.class
+Server\Finanzamt\Finanzamt.class
+Server\Kunde\Kunde.class
+Common\Kontostand.class
+Server\Finanzamt\FinanzamtImpl.class
