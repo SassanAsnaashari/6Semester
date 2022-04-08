@@ -21,6 +21,7 @@ int insertw (char*);
 int deletew (char*);
 int lookupw (char*);
 int updatew (char*, char*);
+int countw(int *);
 
 int main (argc, argv)
 int argc;
@@ -32,14 +33,14 @@ char *argv[];
    int wrdlen;
    int i;
    int length;
-
+   int counter = 0;
    handle = clnt_create (RMACHINE, RDBASEPROG, RDBASEVERS, "TCP");
    if (handle == 0) {
       printf ("Could not contact remote program.\n");
       exit(1);
    }
     printf ("Remote Program contacted successfully.\n");
-    printf ("Enter Command out of    I i d l u q  \n");
+    printf ("Enter Command out of    I i d l u c q \n");
    
    while (1) {
       wrdlen = nextin (&cmd, word, word2);
@@ -77,6 +78,14 @@ char *argv[];
             else
                printf ("Could not update %s.\n", word);
             break;
+         case 'c':
+            printf("Cient: Count is called.\n");
+            if( countw(&counter) ){
+                counter = countw(&counter);
+                printf("%d", counter);
+            }
+            break;
+
          case 'q':
             printf ("program quits.\n");
             exit(0);

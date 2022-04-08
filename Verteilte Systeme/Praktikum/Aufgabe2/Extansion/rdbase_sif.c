@@ -14,8 +14,17 @@ int insertw (char*);
 int deletew (char*);
 int lookupw (char*);
 int updatew (char*, char*);
+int countw (int * );
 
 static int retcode;
+
+int *countw_1_svc(dummy, handle) void * dummy;
+struct svc_req *handle;
+{
+    retcode = countw(dummy);
+    return &retcode;
+}
+
 
 int *initw_1_svc(dummy, handle)
 void *dummy;

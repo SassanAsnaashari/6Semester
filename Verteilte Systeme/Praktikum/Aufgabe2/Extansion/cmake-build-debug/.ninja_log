@@ -1,0 +1,22 @@
+# ninja log v5
+3	72	1649332709872520737	CMakeFiles/Aufgabe2.dir/rdbase_xdr.c.o	7aa3db3e2606fa0
+1	70	1649332709864520711	CMakeFiles/Aufgabe2.dir/rdbase.c.o	678c2e0864a37c6d
+2	90	1649332709888520787	CMakeFiles/Aufgabe2.dir/rdbase_svc.c.o	91d3db639e413a41
+1	81	1649332709880520762	CMakeFiles/Aufgabe2.dir/rdbase_clnt.c.o	a4eb874a52f648ca
+1	93	1649332709892520800	CMakeFiles/Aufgabe2.dir/rdbase_sif.c.o	185ae07b1cdbebf7
+1	110	1649332709908520851	CMakeFiles/Aufgabe2.dir/rdbase_srp.c.o	829064dc06668c8f
+1	95	1649332709896520813	CMakeFiles/Aufgabe2.dir/rdbase_cif.c.o	b7a240d249784b8a
+1	63	1649337523904922324	CMakeFiles/Aufgabe2.dir/rdbase_svc.c.o	3d28df80af5c0755
+1	64	1649337523904922324	CMakeFiles/Aufgabe2.dir/rdbase_srp.c.o	1da34aaceeee6278
+1	66	1649337523908922340	CMakeFiles/Aufgabe2.dir/rdbase.c.o	ecb0c7b922622cf1
+1	69	1649337523908922340	CMakeFiles/Aufgabe2.dir/rdbase_clnt.c.o	81e5bc18631c81ce
+2	74	1649337523916922371	CMakeFiles/Aufgabe2.dir/rdbase_xdr.c.o	4654480fff3fde3a
+1	75	1649337523916922371	CMakeFiles/Aufgabe2.dir/rdbase_cif.c.o	55789900cfe0d812
+0	111	1649339310739675473	CMakeFiles/Aufgabe2.dir/rdbase.c.o	ecb0c7b922622cf1
+1	112	1649339310743675483	CMakeFiles/Aufgabe2.dir/rdbase_cif.c.o	55789900cfe0d812
+1	112	1649339310743675483	CMakeFiles/Aufgabe2.dir/rdbase_clnt.c.o	81e5bc18631c81ce
+1	112	1649339310743675483	CMakeFiles/Aufgabe2.dir/rdbase_sif.c.o	daaa6fe539422f14
+2	112	1649339310743675483	CMakeFiles/Aufgabe2.dir/rdbase_xdr.c.o	4654480fff3fde3a
+1	112	1649339310747675491	CMakeFiles/Aufgabe2.dir/rdbase_srp.c.o	1da34aaceeee6278
+1	113	1649339310743675483	CMakeFiles/Aufgabe2.dir/rdbase_svc.c.o	3d28df80af5c0755
+1	33	1649339352443774134	CMakeFiles/Aufgabe2.dir/rdbase.c.o	ecb0c7b922622cf1

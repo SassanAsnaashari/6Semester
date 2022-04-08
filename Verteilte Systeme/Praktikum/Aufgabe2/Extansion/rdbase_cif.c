@@ -7,6 +7,11 @@
 extern CLIENT *handle;
 static int *ret;
 
+int countw(counter) int  counter;
+{
+    ret = countw_1(&counter , handle);
+    return  ret == 0 ? 0 : *ret;
+}
 int initw() {
    ret = initw_1 (0, handle);
    return ret==0 ? 0 : *ret;

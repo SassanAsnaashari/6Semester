@@ -19,6 +19,7 @@ program RDBASEPROG{
       int  DELETEW (string) = 3;
       int  LOOKUPW (string) = 4;
       int  UPDATEW (upd)    = 5;
+      int  COUNTW ( void )  = 6;
       
    } = 1;
 } = 0x30090949;

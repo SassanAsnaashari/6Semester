@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9fad792-75f3-46de-9d5e-abf504443d8d" name="Changes" comment="" />
+    <list default="true" id="a9fad792-75f3-46de-9d5e-abf504443d8d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aufgabe2/Leistungsuebersicht_1_1.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aufgabe2/makerpc" beforeDir="false" afterPath="$PROJECT_DIR$/../Aufgabe2/Extansion/makerpc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aufgabe2/rdbase.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Aufgabe2/Extansion/rdbase.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aufgabe2/rdbase.x" beforeDir="false" afterPath="$PROJECT_DIR$/../Aufgabe2/Extansion/rdbase.x" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aufgabe2/rdbase2022.x" beforeDir="false" afterPath="$PROJECT_DIR$/../Aufgabe2/Extansion/rdbase2022.x" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aufgabe2/rdbase_cif.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Aufgabe2/Extansion/rdbase_cif.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aufgabe2/rdbase_sif.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Aufgabe2/Extansion/rdbase_sif.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aufgabe2/rdbase_srp.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Aufgabe2/Extansion/rdbase_srp.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +29,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="26jqalKHuTuRdRySrgP3xRpStCE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,18 +44,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.09708738" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="shared-indexes" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sasnaashari\Documents\Hochschule\6.Semester\Verteilte Systeme\Praktikum\Aufgabe1\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KundeClient">
+  <component name="RunManager" selected="Application.FinanzamtClient">
     <configuration name="BankServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Server.BankServer" />
       <module name="Aufgabe1" />
@@ -113,8 +129,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KundeClient" />
         <item itemvalue="Application.FinanzamtClient" />
+        <item itemvalue="Application.KundeClient" />
         <item itemvalue="Application.BankServer" />
         <item itemvalue="Application.ComplexAdderClient" />
         <item itemvalue="Application.ComplexAdderServer" />
@@ -131,10 +147,16 @@
       <updated>1647947412506</updated>
       <workItem from="1647947414116" duration="13482000" />
       <workItem from="1648071684139" duration="12993000" />
+      <workItem from="1649331172142" duration="187000" />
+      <workItem from="1649333596568" duration="605000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

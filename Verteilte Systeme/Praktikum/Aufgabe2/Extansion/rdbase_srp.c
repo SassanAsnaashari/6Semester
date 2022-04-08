@@ -6,6 +6,11 @@
 char dbase[DBASESIZE] [MAXWORD+1];
 int  nwords = 0;
 
+int countw(){
+   int count = 0;
+    return sizeof dbase;
+}
+
 int initw() {
    nwords = 0;
    return 1;
