@@ -1,0 +1,60 @@
+<Wahl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="VML.xsd">
+
+    <Wahltag>28.11.1991</Wahltag>
+    <Wahlbegin>8:30</Wahlbegin>
+    <Wahlende>12:00</Wahlende>
+    <Partei id="p2">
+        <Name>SPD</Name>
+        <Kandidat>
+            <Name>Peter Scholz</Name>
+            <Geburtsname>-</Geburtsname>
+            <Beruf>Handwerker</Beruf>
+            <Listenplatz>200</Listenplatz>
+            <Erststimmen>80.22</Erststimmen>
+        </Kandidat>
+        <Kandidat>
+            <Name>Hans Georg</Name>
+            <Geburtsname>-</Geburtsname>
+            <Beruf>Apotheker</Beruf>
+            <Listenplatz>100</Listenplatz>
+            <Erststimmen>10.22</Erststimmen>
+        </Kandidat>
+        <Kandidat>
+            <Name>Karl Mundig</Name>
+            <Geburtsname>-</Geburtsname>
+            <Beruf>Arzt</Beruf>
+            <Listenplatz>2</Listenplatz>
+            <Erststimmen>5</Erststimmen>
+        </Kandidat>
+    </Partei>
+    <Partei id="p3">
+        <Name>CDU</Name>
+        <Kandidat>
+            <Name>Peter Scholz</Name>
+            <Geburtsname>-</Geburtsname>
+            <Beruf>Handwerker</Beruf>
+            <Listenplatz>200</Listenplatz>
+            <Erststimmen>80.22</Erststimmen>
+        </Kandidat>
+        <Kandidat>
+            <Name>Hans Georg</Name>
+            <Geburtsname>-</Geburtsname>
+            <Beruf>Apotheker</Beruf>
+            <Listenplatz>100</Listenplatz>
+            <Erststimmen>10.22</Erststimmen>
+        </Kandidat>
+        <Kandidat>
+            <Name>Karl Mundig</Name>
+            <Geburtsname>-</Geburtsname>
+            <Beruf>Arzt</Beruf>
+            <Listenplatz>2</Listenplatz>
+            <Erststimmen>5</Erststimmen>
+        </Kandidat>
+    </Partei>
+
+    <Wahlergebnis>
+        <Zweitstimme partei="p2">20.3</Zweitstimme>
+        <Zweitstimme partei="p3">25.3</Zweitstimme>
+    </Wahlergebnis>
+
+</Wahl>

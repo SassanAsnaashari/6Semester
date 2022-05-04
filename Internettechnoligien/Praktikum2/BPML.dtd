@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Preisübersicht (Tankstelle+, Pächter+, Mineralölgesellschaft+, Options)>
+    <!ELEMENT Tankstelle (Name, Adresse, Geodaten*, Beschreibung*, Preise)>
+        <!ELEMENT Name (#PCDATA) >
+        <!ELEMENT Adresse (#PCDATA)>
+        <!ELEMENT Geodaten (#PCDATA)>
+        <!ELEMENT Beschreibung (#PCDATA)>
+        <!ELEMENT Preise (Preis)*>
+            <!ELEMENT Preis (#PCDATA)>
+            <!ATTLIST Preis kraftstoffart (E10| Super| Diesel| SuperPlus)>
+
+        <!ATTLIST Tankstelle PächterID IDREF #REQUIRED>
+        <!ATTLIST Tankstelle MineralölgesellschatsID IDREF #REQUIRED>
+        <!ATTLIST Tankstelle Bewertung (1|2|3|4|5|6)*>
+
+    <!ELEMENT  Pächter ( Name | Adresse | #PCDATA)*>
+        <!ATTLIST Pächter pächterID ID #REQUIRED>
+
+    <!ELEMENT Mineralölgesellschaft (Name, Adresse, Mailadresse) >
+        <!ELEMENT Mailadresse (#PCDATA)>
+        <!ATTLIST Mineralölgesellschaft mineralId ID #REQUIRED>
+
+    <!ELEMENT Options (ANY)* >

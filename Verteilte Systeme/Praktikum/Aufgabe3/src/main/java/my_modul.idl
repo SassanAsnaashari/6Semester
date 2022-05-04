@@ -1,0 +1,65 @@
+// Mensch / Prominenter muss 3 Attribute haben
+// Eigentschaften als Attribute
+// Reporter vor Prominenter
+// Alles in einem Modul
+
+
+
+
+module promi{
+
+    struct Name{
+        string nachname;
+        sequence <string> vornamen;
+    };
+    enum Pass{REISEPASS, AUSWEIS};
+
+    interface mensch{
+        readonly attribute Name name;
+        attribute Pass reisepass;
+    };
+
+    interface reporter:mensch{};
+
+    interface promi:mensch{
+          const short ACHT = 8;
+          struct Wohnort{
+                string ortsname;
+                string staat;
+                short date[ACHT];
+            };
+          typedef sequence<Wohnort> Wohnort_Seq;
+          attribute Wohnort_Seq wohnorte;
+
+          enum Reasons{EINS, ZWEI, DREI};
+
+          exception Absage{
+                long error_code;
+                Reasons raisons;
+           };
+
+          void zuziehen(in Wohnort wohnorte) raises(Absage);
+
+          string interview1(in reporter reporter);
+          void interview2(in reporter reporter, out string dok);
+
+    };
+
+
+    interface meldeamt{
+
+        enum Key {P, N};
+        enum Emotion{Positiv,Negativ};
+
+        union U switch(Key){
+            case P: Pass  pass;
+            case N: Name  name;
+        };
+
+        promi suchen(in U u);
+        Emotion zuzug(in promi promi);
+        any wegzug(in promi promi);
+
+    };
+
+};

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsa="http://www.w3.org/2001/XMLSchema">
+    <xsd:simpleType name="Wahlen">
+        <xsd:restriction>
+            <xsd:enumeration value="Landtagwahl"/>
+            <xsd:enumeration value="Bundestagswahl"/>
+            <xsd:enumeration value="Europawahl"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="Kandidat">
+        <xsd:sequence>
+            <xsd:element name="Name" type="xsd:string"/>
+            <xsd:element name="Geburtsname" type="xsd:string"/>
+            <xsd:element name="Beruf" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="Listenplatz" type="xsd:int"/>
+            <xsd:element name="Erststimmen" type="Prozent"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="Prozent" >
+        <xsd:restriction base="xsd:decimal">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="100"/>
+            <xsd:fractionDigits value="2"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="Partei">
+        <xsd:sequence>
+            <xsd:element name="Name" type="xsd:string"/>
+            <xsd:element name="Kandidat" type="Kandidat" minOccurs="3" maxOccurs="25" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID" use="required"/>
+    </xsd:complexType>
+
+
+    <xsd:element name="Wahl">
+       <xsd:complexType>
+           <xsd:sequence>
+               <xsd:element name="Wahltag" type="xsd:string"/>
+               <xsd:element name="Wahlbegin" type="xsd:string"/>
+               <xsd:element name="Wahlende" type="xsd:string"/>
+               <xsd:element name="Partei" type="Partei" minOccurs="2" maxOccurs="100"/>
+               <xsd:element name="Wahlergebnis">
+                   <xsd:complexType mixed="true">
+                       <xsd:sequence>
+                             <xsd:element name="Zweitstimme" maxOccurs="unbounded">
+                                 <xsd:complexType>
+                                     <xsd:simpleContent>
+                                         <xsd:extension base="Prozent">
+                                             <xsd:attribute name="partei" type="xsd:IDREF"/>
+                                         </xsd:extension>
+                                     </xsd:simpleContent>
+                                 </xsd:complexType>
+                             </xsd:element>
+                       </xsd:sequence>
+                   </xsd:complexType>
+               </xsd:element>
+           </xsd:sequence>
+           <xsd:attribute name="Wahltyp" type="Wahlen"/>
+       </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

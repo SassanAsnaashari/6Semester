@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Preisübersicht SYSTEM "BPML.dtd">
+
+<Preisübersicht>
+    <Tankstelle PächterID="2" MineralölgesellschatsID="34" Bewertung="3">
+        <Name> Shell </Name>
+        <Adresse>Luipoldstraße 289, 84029 LA</Adresse>
+        <Geodaten>23.4123, 23.4267</Geodaten>
+        <Beschreibung> Ein tolle Tankstelle im Herzen Landshut</Beschreibung>
+        <Preise>
+            <Preis kraftstoffart="Diesel"> 1.78</Preis>
+            <Preis kraftstoffart="E10"> 1.90</Preis>
+            <Preis kraftstoffart="Super"> 2.20</Preis>
+        </Preise>
+    </Tankstelle>
+    <Pächter pächterID="2">
+        <Name> Peter </Name> ist der Pächter und wohnt <Adresse>Luipoldstraße 5</Adresse> über der Tankstelle
+    </Pächter>
+    <Mineralölgesellschaft mineralId="34">
+        <Name>Shell</Name>
+        <Adresse>Suhrenkamp 71 - 77 22335 Hamburg</Adresse>
+        <Mailadresse>kontakt@shell.com</Mailadresse>
+    </Mineralölgesellschaft>
+    <Options>
+        Zusatzadresse:
+            <Adresse>Zweite Adresse</Adresse>
+    </Options>
+</Preisübersicht>
